@@ -1,13 +1,22 @@
-# React + Vite
+# 🪟 Waves & Curtain – Full Stack Project Coming Soon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Waves & Curtain – Full Website Mockup](./src/assets/mockup02.png)
+![Home Page Preview](./src/assets/Full%20template.png)
 
-Currently, two official plugins are available:
+I developed the **full-stack project** for **Waves & Curtain**, a premium UAE-based interior brand specializing in luxury curtains and blinds.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**This project will be live soon... Stay tuned!**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# wavesandcurtain
+### 🛠 Tech Stack
+
+- React.js  
+- JavaScript  
+- Tailwind CSS  
+- Framer Motion  
+- And many more to be included...
+
+---
+
+> 🏗️ Project is under development. More features and functionalities coming soon.
