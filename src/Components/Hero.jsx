@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { Play } from 'lucide-react';
+import { useState } from 'react';
 
 const Hero = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
   return (
     <section id="home" className="pt-20 lg:pt-24 min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -93,20 +96,34 @@ const Hero = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div className="aspect-video bg-gray-900 flex items-center justify-center">
-                <img
-                  src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Luxury curtains installation"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
-                  >
-                    <Play className="w-6 h-6 text-gray-900 ml-1" />
-                  </motion.button>
-                </div>
+                {!isPlaying ? (
+                  <>
+                    <img
+                      src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800"
+                      alt="Luxury curtains installation"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                      <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        onClick={() => setIsPlaying(true)}
+                        className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
+                      >
+                        <Play className="w-6 h-6 text-gray-900 ml-1" />
+                      </motion.button>
+                    </div>
+                  </>
+                ) : (
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/1fynPRbCxxE?autoplay=1"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                  />
+                )}
               </div>
             </div>
           </motion.div>
