@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Menu, Phone, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { logo } from '../assets/logo.png'; // Adjust the path as necessary
+import logo from '../assets/logo.png'; // Adjust the path as necessary
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +26,7 @@ const Header = () => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-white/90 backdrop-blur-sm'
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-sm' : 'bg-white/90 backdrop-blur-sm'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,7 +36,7 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <img src={logo} alt="" className='w-56' />
+            <img src={logo} alt="" className='w-28' />
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -60,7 +60,7 @@ const Header = () => {
             className="hidden lg:flex items-center space-x-2 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200"
           >
             <Phone className="w-4 h-4" />
-            <span>Quote</span>
+            <span>Get Quote</span>
           </motion.button>
 
           {/* Mobile Menu Button */}

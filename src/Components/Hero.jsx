@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Award, Clock, Play, Users } from 'lucide-react';
+import { Play } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -21,9 +21,9 @@ const Hero = () => {
                 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight"
               >
                 Your Certified Partner for
-                <span className="text-blue-600"> Luxury</span>
-                <span className="text-orange-500"> Curtains & Blinds</span> in
-                <span className="text-blue-600"> Dubai</span>
+                <span className="text-blue-500"> Luxury</span>
+                <span className="text-yellow-600"> Curtains & Blinds</span> in
+                <span className="text-blue-500"> Dubai</span>
               </motion.h1>
 
               <motion.p
@@ -45,16 +45,16 @@ const Hero = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="flex flex-wrap gap-4"
             >
-              <button className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-200 font-medium">
-                Get Quote →
+              <button className="text-black px-8 py-3 border rounded-full hover:bg-blue-400 hover:text-white transition-colors duration-200 font-medium">
+                Get Started →
               </button>
-              <button className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 font-medium">
+              <button className="border border-gray-300 text-gray-700 px-8 py-3 rounded-full hover:bg-gray-700 hover:text-white transition-colors duration-200 font-medium">
                 View Gallery
               </button>
             </motion.div>
 
             {/* Stats */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.8 }}
@@ -81,7 +81,7 @@ const Hero = () => {
                 <div className="text-2xl font-bold text-gray-900">24h</div>
                 <div className="text-sm text-gray-600">Support</div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Right Content - Video */}
