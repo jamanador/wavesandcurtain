@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
+import logo from '../assets/logo.png'; // Adjust the path as necessary
 
 const Footer = () => {
   return (
@@ -15,13 +16,7 @@ const Footer = () => {
             className="space-y-4"
           >
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">C&B</span>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold">CURTAIN</h3>
-                <p className="text-xs text-gray-400 -mt-1">& BLINDS</p>
-              </div>
+              <img src={logo} alt="" className='w-28' />
             </div>
             <p className="text-gray-400 leading-relaxed">
               Your certified partner for luxury curtains and blinds in Dubai. Transform your space with our premium window treatments.
@@ -96,11 +91,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-blue-400" />
-                <span className="text-gray-400">+971 50 123 4567</span>
+                <span className="text-gray-400">+971 55 337 1902</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <span className="text-gray-400">info@curtainsblinds.ae</span>
+                <span className="text-gray-400">badirafique@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-blue-400 mt-1" />
@@ -111,7 +106,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Curtains & Blinds Dubai. All rights reserved.</p>
+          <p>&copy; 2025 Curtains & Blinds Dubai. All rights reserved.</p>
         </div>
       </div>
     </footer>
