@@ -1,12 +1,14 @@
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
+import RenovationSection from "./Components/RenovationSection";
 
 export default function App() {
   return (
     <div className="min-h-screen">
       <Header />
       <Hero />
+      <RenovationSection />
       <Footer />
     </div>
   );

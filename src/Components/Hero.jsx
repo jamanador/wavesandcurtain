@@ -6,7 +6,7 @@ const Hero = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section id="home" className="pt-20 lg:pt-24 min-h-screen bg-gray-50">
+    <section id="home" className="pt-20 lg:pt-24  bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center py-12 lg:py-20">
           {/* Left Content */}
@@ -48,10 +48,10 @@ const Hero = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="flex flex-wrap gap-4"
             >
-              <button className="text-black px-8 py-3 border rounded-full hover:bg-blue-400 hover:text-white transition-colors duration-200 font-medium">
+              <button className="text-black px-5 md:px-8 py-3 border rounded-full hover:bg-blue-400 hover:text-white transition-colors duration-200 font-medium">
                 Get Started →
               </button>
-              <button className="border border-gray-300 text-gray-700 px-8 py-3 rounded-full hover:bg-gray-700 hover:text-white transition-colors duration-200 font-medium">
+              <button className="border border-gray-300 text-gray-700 px-5 md:px-8 py-3 rounded-full hover:bg-gray-700 hover:text-white transition-colors duration-200 font-medium">
                 View Gallery
               </button>
             </motion.div>

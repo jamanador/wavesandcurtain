@@ -36,7 +36,7 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <img src={logo} alt="" className='w-28' />
+            <img src={logo} alt="" className='w-28 mt-6' />
           </motion.div>
 
           {/* Desktop Navigation */}
