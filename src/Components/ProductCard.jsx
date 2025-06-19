@@ -9,7 +9,7 @@ const ProductCard = ({ product, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="group cursor-pointer w-full max-w-sm"
+      className="group cursor-pointer w-full lg:max-w-sm md:max-w-lg max-w-lg"
     >
       <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white">
         <div className="relative h-64 overflow-hidden">
@@ -22,7 +22,7 @@ const ProductCard = ({ product, index }) => {
 
           {/* Always-visible text */}
           <div className="absolute inset-0 flex items-center justify-center z-50">
-            <h3 className="text-2xl md:text-4xl font-extrabold text-white group-hover:text-white transition-colors duration-300 text-center px-4 leading-tight">
+            <h3 className="text-4xl font-extrabold text-white group-hover:text-white transition-colors duration-300 text-center px-4 leading-tight">
               {firstLine}<br />{secondLine}
             </h3>
           </div>

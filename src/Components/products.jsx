@@ -51,7 +51,7 @@ const Products = () => {
         </motion.div>
 
         <div className='space-y-8'>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center">
+          <div className="flex justify-center items-center gap-8 flex-wrap">
             {products.slice(0, 3).map((product, index) => (
               <ProductCard product={product} index={index} key={index} />
             ))}
@@ -72,8 +72,8 @@ const Products = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <button className="border-2 border-gray-200 text-gray-700 px-12 py-3 rounded-full hover:bg-gray-50 transition-colors duration-200 font-medium">
-            View All Products
+          <button className="mt-5 md:mt-7 border border-gray-300 text-gray-700 md:px-12 px-8 py-3 rounded-full hover:bg-gray-700 hover:text-white transition-colors duration-200 font-medium">
+            View Our Projects
           </button>
         </motion.div>
       </div>
