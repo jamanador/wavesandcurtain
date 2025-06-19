@@ -37,14 +37,14 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="pb-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center space-y-2 mb-16"
+          className="text-center space-y-1 mb-16"
         >
           <p className="text-blue-400 font-semibold">Discover Our</p>
           <h2 className="text-4xl lg:text-4xl font-bold text-gray-900">
@@ -88,7 +88,7 @@ const Projects = () => {
           className="text-center mt-12"
         >
           <button className="mt-5 md:mt-7 border border-gray-300 text-gray-700 md:px-12 px-8 py-3 rounded-full hover:bg-gray-700 hover:text-white transition-colors duration-200 font-medium">
-            Check Our More Projects
+            Check Out More Projects
           </button>
         </motion.div>
       </div>

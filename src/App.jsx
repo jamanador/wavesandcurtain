@@ -1,4 +1,5 @@
 import Footer from "./Components/Footer";
+import GetCustomCurtain from "./Components/GetCustomCurtain";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Products from "./Components/products";
@@ -12,6 +13,7 @@ export default function App() {
       <Hero />
       <RenovationSection />
       <Products />
+      <GetCustomCurtain />
       <Projects />
       <Footer />
     </div>
