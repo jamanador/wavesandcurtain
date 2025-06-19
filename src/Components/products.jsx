@@ -44,7 +44,7 @@ const Products = () => {
           viewport={{ once: true }}
           className="text-center space-y-2 mb-16"
         >
-          <p className="text-blue-500 font-medium">Explore Our</p>
+          <p className="text-blue-400 font-medium">Explore Our</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
             Range Of Products
           </h2>
@@ -73,7 +73,7 @@ const Products = () => {
           className="text-center mt-12"
         >
           <button className="mt-5 md:mt-7 border border-gray-300 text-gray-700 md:px-12 px-8 py-3 rounded-full hover:bg-gray-700 hover:text-white transition-colors duration-200 font-medium">
-            View Our Projects
+            View All Our Products →
           </button>
         </motion.div>
       </div>

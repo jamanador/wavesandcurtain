@@ -24,9 +24,9 @@ const Hero = () => {
                 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight"
               >
                 Your Certified Partner for
-                <span className="text-blue-500"> Luxury</span>
+                <span className="text-blue-400"> Luxury</span>
                 <span className="text-yellow-600"> Curtains & Blinds</span> in
-                <span className="text-blue-500"> Dubai</span>
+                <span className="text-blue-400"> Dubai</span>
               </motion.h1>
 
               <motion.p
