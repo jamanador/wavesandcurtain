@@ -26,10 +26,10 @@ const Header = () => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white' : ''
+      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-white ${isScrolled ? 'bg-white' : ''
         }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
           <motion.div
@@ -76,7 +76,7 @@ const Header = () => {
         <motion.div
           initial={false}
           animate={{ height: isMenuOpen ? 'auto' : 0 }}
-          className="lg:hidden overflow-hidden"
+          className="lg:hidden overflow-hidden z-50 "
         >
           <div className="py-4 space-y-4">
             {navItems.map((item) => (

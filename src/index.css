@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   font-family: 'Outfit', sans-serif;
+}
+/* index.css or global.css */
+.section-divider {
+  @apply w-full my-12 md:my-16 lg:my-20;
 }
