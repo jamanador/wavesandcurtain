@@ -1,3 +1,4 @@
+import ContactForm from "./Components/ContactForm";
 import DiscoverUs from "./Components/DiscoverUs";
 import Footer from "./Components/Footer";
 import GetCustomCurtain from "./Components/GetCustomCurtain";
@@ -18,6 +19,7 @@ export default function App() {
       </div>
       <Projects />
       <DiscoverUs />
+      <ContactForm />
       <Footer />
     </div>
   );
