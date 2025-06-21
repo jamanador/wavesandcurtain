@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
-import logo from '../assets/logo.png'; // Adjust the path as necessary
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <img src={logo} alt="" className='w-28' />
             </div>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-normal">
               Your certified partner for luxury curtains and blinds in Dubai. Transform your space with our premium window treatments.
             </p>
             <div className="flex space-x-4">
@@ -72,10 +72,12 @@ const Footer = () => {
           >
             <h3 className="text-lg font-bold">Legal Information</h3>
             <div className="space-y-2 text-gray-400">
-              <div>Trade License: 123456789</div>
+              {/* <div>Trade License: 123456789</div>
               <div>VAT Number: 123456789012345</div>
               <div>Certified Installer</div>
+              <div>Dubai Municipality Approved</div> */}
               <div>Dubai Municipality Approved</div>
+              <div>Privacy Policy</div>
             </div>
           </motion.div>
 
@@ -87,7 +89,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <h3 className="text-lg font-bold">Follow Us</h3>
+            <h3 className="text-lg font-bold">Contact Us</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-blue-400" />

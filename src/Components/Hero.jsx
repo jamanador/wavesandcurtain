@@ -52,7 +52,7 @@ const Hero = () => {
                 Get Started →
               </button>
               <button className="border border-gray-300 text-gray-700 px-5 md:px-8 py-3 rounded-full hover:bg-gray-700 hover:text-white transition-colors duration-200 font-medium">
-                View Our Projects              </button>
+                View Our Projects</button>
             </motion.div>
 
             {/* Stats */}

@@ -1,20 +1,20 @@
 import { motion } from 'framer-motion';
-import project1 from '../assets/project1.png'; // Ensure this path is correct
-import project10 from '../assets/project10.png'; // Ensure this path is correct
-import project11 from '../assets/project11.png'; // Ensure this path is correct
-import project12 from '../assets/project12.png'; // Ensure this path is correct
-import project13 from '../assets/project13.png'; // Ensure this path is correct
-import project114 from '../assets/project14.png'; // Ensure this path is correct
-import project15 from '../assets/project15.png'; // Ensure this path is correct
-import project16 from '../assets/project16.png'; // Ensure this path is correct
-import project2 from '../assets/project2.png'; // Ensure this path is correct
-import project3 from '../assets/project3.png'; // Ensure this path is correct
-import project4 from '../assets/project4.png'; // Ensure this path is correct
-import project5 from '../assets/project5.png'; // Ensure this path is correct
-import project6 from '../assets/project6.png'; // Ensure this path is correct
-import project7 from '../assets/project7.png'; // Ensure this path is correct
-import project8 from '../assets/project8.png'; // Ensure this path is correct
-import project9 from '../assets/project9.png'; // Ensure this path is correct
+import project1 from '../assets/project1.png';
+import project10 from '../assets/project10.png';
+import project11 from '../assets/project11.png';
+import project12 from '../assets/project12.png';
+import project13 from '../assets/project13.png';
+import project114 from '../assets/project14.png';
+import project15 from '../assets/project15.png';
+import project16 from '../assets/project16.png';
+import project2 from '../assets/project2.png';
+import project3 from '../assets/project3.png';
+import project4 from '../assets/project4.png';
+import project5 from '../assets/project5.png';
+import project6 from '../assets/project6.png';
+import project7 from '../assets/project7.png';
+import project8 from '../assets/project8.png';
+import project9 from '../assets/project9.png';
 
 const Projects = () => {
   const projects = [
@@ -38,7 +38,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -47,14 +47,15 @@ const Projects = () => {
           className="text-center space-y-1 mb-16"
         >
           <p className="text-blue-400 font-semibold">Discover Our</p>
-          <h2 className="text-4xl lg:text-4xl font-bold text-gray-900">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
             Projects That Reflect Our
             <br />
-            <span className="">Passion and Precision</span>
+            <span>Passion and Precision</span>
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-4">
+        {/* Add overflow-hidden here to prevent image scaling overflow */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-hidden">
           {projects.map((image, index) => (
             <motion.div
               key={index}
@@ -62,23 +63,17 @@ const Projects = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.05 }}
-              className="group cursor-pointer"
+              whileHover={{ scale: 1.02 }}
+              className="group cursor-pointer overflow-hidden rounded-xl shadow-lg bg-white"
             >
-              <div className="relative rounded-xl overflow-hidden shadow-lg bg-white">
-                <div className="overflow-hidden">
-                  <img
-                    src={image}
-                    alt={`Project ${index + 1}`}
-                    className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
-                </div>
-              </div>
+              <img
+                src={image}
+                alt={`Project ${index + 1}`}
+                className="w-full h-auto object-cover"
+              />
             </motion.div>
           ))}
         </div>
-
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -93,6 +88,7 @@ const Projects = () => {
         </motion.div>
       </div>
     </section>
+
   );
 };
 

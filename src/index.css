@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Outfit', sans-serif;
+  overflow-x: hidden!important;
 }
 /* index.css or global.css */
 .section-divider {

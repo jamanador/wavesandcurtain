@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Menu, Phone, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import logo from '../assets/logo.png'; // Adjust the path as necessary
+import logo from '../assets/logo.png';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
