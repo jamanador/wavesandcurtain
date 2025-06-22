@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Menu, Phone, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,7 +37,9 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <img src={logo} alt="" className='w-28 mt-6' />
+            <Link to="/">
+              <img src={logo} alt="" className='w-28 mt-6' />
+            </Link>
           </motion.div>
 
           {/* Desktop Navigation */}

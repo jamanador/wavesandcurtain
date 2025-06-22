@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Footer = () => {
@@ -16,7 +17,9 @@ const Footer = () => {
             className="space-y-4"
           >
             <div className="flex items-center space-x-2">
-              <img src={logo} alt="" className='w-28' />
+              <Link to="/">
+                <img src={logo} alt="Logo" className="w-24" />
+              </Link>
             </div>
             <p className="text-gray-400 leading-normal">
               Your certified partner for luxury curtains and blinds in Dubai. Transform your space with our premium window treatments.
