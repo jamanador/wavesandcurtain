@@ -1,5 +1,5 @@
-import commercial from "../assets/commercial.png";
-import residentail from "../assets/residentail.png";
+import commercial from "../../assets/commercial.png";
+import residentail from "../../assets/residentail.png";
 
 export default function RenovationSection() {
   return (

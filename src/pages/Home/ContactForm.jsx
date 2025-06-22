@@ -1,16 +1,17 @@
 import { motion } from 'framer-motion';
-import contactformbg from '../assets/contactformbg.png'; // Ensure you have a background image
+import contactformbg from '../../assets/contactformbg.png'; // Ensure you have a background image
+
 const ContactForm = () => {
   return (
-    <section className="relative bg-black text-white">
+    <section className="relative bg-black text-white overflow-hidden">
       {/* Background image overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-30"
+        className="absolute inset-0 bg-cover bg-center opacity-65"
         style={{ backgroundImage: `url(${contactformbg})` }}
       ></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-12 items-center w-full">
         {/* Left Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -36,7 +37,7 @@ const ContactForm = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="space-y-6"
+          className="space-y-6 w-full"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>

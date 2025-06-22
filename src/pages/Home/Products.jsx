@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import blackoutcurtain from '../assets/blackoutcurtain.png'; // Ensure this path is correct
-import rollerblind from '../assets/rollerblind.png'; // Ensure this path is correct
-import romaniblind from '../assets/romaniblind.png'; // Ensure this path is correct
-import sheercurtain from '../assets/sheercurtain.png'; // Ensure this path is correct
-import zebrablind from '../assets/zebrablind.png'; // Ensure this path is correct
+import blackoutcurtain from '../../assets/blackoutcurtain.png'; // Ensure this path is correct
+import rollerblind from '../../assets/rollerblind.png'; // Ensure this path is correct
+import romaniblind from '../../assets/romaniblind.png'; // Ensure this path is correct
+import sheercurtain from '../../assets/sheercurtain.png'; // Ensure this path is correct
+import zebrablind from '../../assets/zebrablind.png'; // Ensure this path is correct
 import ProductCard from './ProductCard';
 const Products = () => {
   const products = [

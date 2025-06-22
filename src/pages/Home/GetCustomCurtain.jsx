@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import getCustom from '../assets/getCustom.png';
+import getCustom from '../../assets/getCustom.png';
 
 const GetCustomCurtain = () => {
   return (

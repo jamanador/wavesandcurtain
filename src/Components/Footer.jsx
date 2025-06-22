@@ -108,7 +108,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 Curtains & Blinds Dubai. All rights reserved.</p>
+          <p>&copy; 2025 Curtains & Blinds Dubai. All rights reserved. Developed By <a href="https://jamanador.web.app/" className='hover:underline text-white text-sm'>Jaman Ador</a></p>
         </div>
       </div>
     </footer>

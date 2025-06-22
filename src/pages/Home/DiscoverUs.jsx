@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import discover from '../assets/discover.png';
+import discover from '../../assets/discover.png';
 
 const DiscoverUs = () => {
   return (
@@ -10,7 +10,7 @@ const DiscoverUs = () => {
           {/* Right Images */}
           <motion.div
             // whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 1.95, duration: 0.95 }}
+            // whileTap={{ scale: 1.95, duration: 0.95 }}
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
