@@ -17,7 +17,7 @@ const DiscoverUs = () => {
             viewport={{ once: true }}
             className="lg:order-2"
           >
-            <img src={discover} alt="" className="w-full h-auto max-w-full" /> {/* ✅ Added max-w-full */}
+            <img src={discover} alt="" className="w-full h-auto max-w-full" loading="lazy" /> {/* ✅ Added max-w-full */}
           </motion.div>
 
           {/* Left Content */}

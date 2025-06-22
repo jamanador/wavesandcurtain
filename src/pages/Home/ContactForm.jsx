@@ -7,7 +7,9 @@ const ContactForm = () => {
       {/* Background image overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-65"
-        style={{ backgroundImage: `url(${contactformbg})` }}
+        style={{ backgroundImage: `url(${contactformbg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        loading="lazy"
+        aria-hidden="true"
       ></div>
 
       {/* Content */}

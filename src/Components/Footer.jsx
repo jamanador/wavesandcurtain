@@ -18,7 +18,7 @@ const Footer = () => {
           >
             <div className="flex items-center space-x-2">
               <Link to="/">
-                <img src={logo} alt="Logo" className="w-24" />
+                <img src={logo} alt="Logo" loading="lazy" className="w-24" />
               </Link>
             </div>
             <p className="text-gray-400 leading-normal">

@@ -17,6 +17,7 @@ const ProductCard = ({ product, index }) => {
           <img
             src={product.image}
             alt={product.name}
+            loading="lazy"
             className="w-full h-full object-cover "
           />
 

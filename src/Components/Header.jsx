@@ -38,7 +38,7 @@ const Header = () => {
             className="flex items-center space-x-2"
           >
             <Link to="/">
-              <img src={logo} alt="" className='w-28 mt-6' />
+              <img src={logo} alt="" loading="lazy" className='w-28 mt-6' />
             </Link>
           </motion.div>
 

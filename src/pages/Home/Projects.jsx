@@ -69,6 +69,7 @@ const Projects = () => {
               <img
                 src={image}
                 alt={`Project ${index + 1}`}
+                loading="lazy"
                 className="w-full h-auto object-cover"
               />
             </motion.div>

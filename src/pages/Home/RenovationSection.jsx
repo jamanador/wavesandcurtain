@@ -28,6 +28,7 @@ export default function RenovationSection() {
             <img
               src={commercial}
               alt="Commercial"
+              loading="lazy"
               className="w-full h-80 object-cover"
             />
             <span className="absolute top-4 right-4 bg-orange-400 text-white text-xs px-3 py-1 rounded-full shadow">
@@ -46,6 +47,7 @@ export default function RenovationSection() {
           <div className="rounded-2xl overflow-hidden shadow-lg relative w-full sm:w-1/2 md:w-[280px]">
             <img
               src={residentail}
+              loading="lazy"
               alt="Residential"
               className="w-full h-80 object-cover"
             />

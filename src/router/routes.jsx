@@ -1,26 +1,30 @@
+import { Suspense } from "react";
 import { createBrowserRouter as createBrowserRouter9, RouterProvider } from "react-router-dom";
-import { DefaultLayout } from "../layout/DafaultLayout";
+import Loader from "../components/Loader";
+import DefaultLayout from "../layout/DafaultLayout";
 import NotFound from "../pages/ErrorPage/NotFound";
-import { Home } from "../pages/Home";
+import LazyHome from "../pages/Home/LazyHome.jsx";
 export const Routes = () => {
-  const creatRouter = createBrowserRouter9([
+  const createRouter = createBrowserRouter9([
     {
       path: "/",
       element: <DefaultLayout />,
       children: [
         {
-          path: "/",
-          element: <Home />
+          index: true,
+          element: <LazyHome />
         },
         {
-          path: "/home",
-          element: <Home />
+          path: "home",
+          element: <LazyHome />
         },
         { path: '*', element: < NotFound /> }
       ]
     }
   ])
 
-  return RouterProvider({ router: creatRouter });
+  return <Suspense fallback={<Loader />}>
+    <RouterProvider router={createRouter} />
+  </Suspense>
 
 }
