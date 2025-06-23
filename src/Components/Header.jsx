@@ -16,11 +16,11 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Products', href: '#products' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'About us', href: '#about' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Home', Link: '/' },
+    { name: 'Products', Link: '/products' },
+    { name: 'Projects', Link: '/projects' },
+    { name: 'About us', Link: '/about' },
+    { name: 'Contact', Link: '/contact' }
   ];
 
   return (
@@ -34,7 +34,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
           <motion.div
-            whileHover={{ scale: 1.05 }}
+            // whilehover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
             <Link to="/">
@@ -43,22 +43,22 @@ const Header = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8 ">
             {navItems.map((item) => (
-              <motion.a
+              <Link
                 key={item.name}
-                href={item.href}
-                whileHover={{ y: -2 }}
+                to={item.Link}
+                whilehover={{ y: -2 }}
                 className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
               >
                 {item.name}
-              </motion.a>
+              </Link>
             ))}
           </nav>
 
           {/* Quote Button */}
           <motion.button
-            whileHover={{ scale: 1.05 }}
+            whilehover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="hidden lg:flex items-center space-x-2 bg-blue-400 text-white px-6 py-2 rounded-lg hover:bg-blue-500 transition-colors duration-200"
           >
@@ -81,16 +81,16 @@ const Header = () => {
           animate={{ height: isMenuOpen ? 'auto' : 0 }}
           className="lg:hidden overflow-hidden z-50 "
         >
-          <div className="py-4 space-y-4">
+          <div className="py-4 space-y-4 border-b border-b-gray-300 pb-8 shadow-sm">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.Link}
                 className="block text-gray-700 hover:text-blue-600 font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
             <button className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-2 rounded-lg w-full justify-center">
               <Phone className="w-4 h-4" />

@@ -1,41 +1,6 @@
 import { motion } from 'framer-motion';
-import project1 from '../../assets/project1.png';
-import project10 from '../../assets/project10.png';
-import project11 from '../../assets/project11.png';
-import project12 from '../../assets/project12.png';
-import project13 from '../../assets/project13.png';
-import project114 from '../../assets/project14.png';
-import project15 from '../../assets/project15.png';
-import project16 from '../../assets/project16.png';
-import project2 from '../../assets/project2.png';
-import project3 from '../../assets/project3.png';
-import project4 from '../../assets/project4.png';
-import project5 from '../../assets/project5.png';
-import project6 from '../../assets/project6.png';
-import project7 from '../../assets/project7.png';
-import project8 from '../../assets/project8.png';
-import project9 from '../../assets/project9.png';
-
+import { projects } from '../../constants/projects';
 const Projects = () => {
-  const projects = [
-    project1,
-    project2,
-    project3,
-    project4,
-    project5,
-    project6,
-    project7,
-    project8,
-    project9,
-    project10,
-    project11,
-    project12,
-    project13,
-    project114,
-    project15,
-    project16
-  ];
-
   return (
     <section id="projects" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -56,14 +21,14 @@ const Projects = () => {
 
         {/* Add overflow-hidden here to prevent image scaling overflow */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-hidden">
-          {projects.map((image, index) => (
+          {projects?.map((image, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.02 }}
+              whilehover={{ scale: 1.02 }}
               className="group cursor-pointer overflow-hidden rounded-xl shadow-lg bg-white"
             >
               <img

@@ -1,39 +1,7 @@
 import { motion } from 'framer-motion';
-import blackoutcurtain from '../../assets/blackoutcurtain.png'; // Ensure this path is correct
-import rollerblind from '../../assets/rollerblind.png'; // Ensure this path is correct
-import romaniblind from '../../assets/romaniblind.png'; // Ensure this path is correct
-import sheercurtain from '../../assets/sheercurtain.png'; // Ensure this path is correct
-import zebrablind from '../../assets/zebrablind.png'; // Ensure this path is correct
+import { products } from '../../constants/products';
 import ProductCard from './ProductCard';
 const Products = () => {
-  const products = [
-    {
-      name: "Blackout Curtain",
-      image: blackoutcurtain,
-      description: "Complete light blocking for perfect sleep"
-    },
-    {
-      name: "Sheer Curtain",
-      image: sheercurtain,
-      description: "Elegant light filtering with privacy"
-    },
-    {
-      name: "Romani Blind",
-      image: romaniblind,
-      description: "Classic folding style with luxury appeal"
-    },
-    {
-      name: "Roller Blind",
-      image: rollerblind,
-      description: "Modern minimalist window solution"
-    },
-    {
-      name: "Zebra Blind",
-      image: zebrablind,
-      description: "Dual fabric for ultimate light control"
-    }
-  ];
-
   return (
     <section id="products" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +20,7 @@ const Products = () => {
 
         <div className='space-y-8'>
           <div className="flex justify-center items-center gap-8 flex-wrap">
-            {products.slice(0, 3).map((product, index) => (
+            {products?.slice(0, 3).map((product, index) => (
               <ProductCard product={product} index={index} key={index} />
             ))}
 
@@ -60,7 +28,7 @@ const Products = () => {
 
           {/* Second row: 2 items centered */}
           <div className="flex justify-center items-center gap-8 flex-wrap">
-            {products.slice(3, 5).map((product, index) => (
+            {products?.slice(3, 5).map((product, index) => (
               <ProductCard product={product} index={index + 3} key={index + 3} />
             ))}
           </div>

@@ -105,7 +105,7 @@ const Hero = () => {
                     />
                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                       <motion.button
-                        whileHover={{ scale: 1.1 }}
+                        whilehover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         onClick={() => setIsPlaying(true)}
                         className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
