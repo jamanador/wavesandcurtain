@@ -9,7 +9,7 @@ const Loader = () => {
         animate={{ rotate: 360 }}
         transition={{
           repeat: Infinity,
-          // duration: 1.4,
+          duration: 1.4,
           ease: "easeInOut",
         }}
       >
@@ -40,7 +40,7 @@ const Loader = () => {
             }}
             transition={{
               repeat: Infinity,
-              // duration: 1.4,
+              duration: 1.4,
               ease: "easeInOut",
             }}
           />

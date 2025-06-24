@@ -45,6 +45,7 @@ const ContactForm = () => {
             <div>
               <label className="text-sm">Your Name</label>
               <input
+                aria-label='Your Name'
                 type="text"
                 className="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none"
               />
@@ -52,6 +53,7 @@ const ContactForm = () => {
             <div>
               <label className="text-sm">Your Email</label>
               <input
+                aria-label='Your Email'
                 type="email"
                 className="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none"
               />
@@ -60,6 +62,7 @@ const ContactForm = () => {
               <label className="text-sm">Number</label>
               <input
                 type="text"
+                aria-label='Your Number'
                 className="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none"
               />
             </div>
@@ -75,6 +78,7 @@ const ContactForm = () => {
               <label className="text-sm">Address</label>
               <input
                 type="text"
+                aria-label='Your Address'
                 className="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none"
               />
             </div>
@@ -92,12 +96,19 @@ const ContactForm = () => {
             <label className="text-sm">Message</label>
             <textarea
               rows="3"
+              aria-label='Your Message'
+              placeholder="Write Your Project Details Here "
               className="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none"
             ></textarea>
           </div>
 
           <button
             type="submit"
+            aria-label='Submit Contact Form'
+            onClick={(e) => {
+              e.preventDefault();
+              alert('Form submitted!'); // Replace with actual form submission logic
+            }}
             className="px-10 py-2 bg-blue-400 text-white font-semibold rounded-full hover:bg-orange-400"
           >
             SUBMIT

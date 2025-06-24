@@ -26,7 +26,7 @@ const BackToTopButton = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 40 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-10 right-6 z-50 p-3 rounded-full bg-gradient-to-r from-blue-500 via-blue-400 to-blue-400 text-white text-xl shadow-lg hover:scale-110 transition-transform"
+          className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-gradient-to-r from-blue-500 via-blue-400 to-blue-400 text-white text-xl shadow-lg hover:scale-110 transition-transform"
           aria-label="Scroll to top"
           title="Scroll to top"
         >
