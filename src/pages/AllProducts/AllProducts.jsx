@@ -14,7 +14,7 @@ function AllProducts() {
   return (
     <div className="px-6 py-10 mt-24 mb-16">
       <h1 className="text-3xl text-center text-black font-bold mb-4">Explore Our Products Collection</h1>
-      <p className="text-sm text-gray-800 mb-6 max-w-5xl mx-auto text-center">        Discover premium-quality curtains and blinds tailored to style, privacy, and modern living. Choose your preference and browse through our handpicked collection.
+      <p className="text-sm text-gray-800 mb-6 max-w-5xl mx-auto text-center">        Discover premium-quality curtains and blinds tailored to style, privacy, and modern living.<br /> Choose your preference and browse through our handpicked collection.
       </p>
 
       {/* Filter Buttons */}

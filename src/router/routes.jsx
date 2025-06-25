@@ -5,6 +5,7 @@ import DefaultLayout from "../layout/DafaultLayout";
 import AllProducts from "../pages/AllProducts/AllProducts.jsx";
 import NotFound from "../pages/ErrorPage/NotFound";
 import LazyHome from "../pages/Home/LazyHome.jsx";
+import ProductDetailsPage from "../pages/ProductDetailsPage/ProductDetailsPage.jsx";
 export const Routes = () => {
   const createRouter = createBrowserRouter9([
     {
@@ -22,6 +23,10 @@ export const Routes = () => {
         {
           path: "/products",
           element: <AllProducts />
+        },
+        {
+          path: "/product/:id",
+          element: <ProductDetailsPage />
         },
         { path: '*', element: < NotFound /> }
       ]
