@@ -2,6 +2,25 @@ import { motion } from 'framer-motion';
 import contactformbg from '../../assets/contactformbg.png'; // Ensure you have a background image
 
 const ContactForm = () => {
+  const cities = [
+    "Dubai",
+    "Abu Dhabi",
+    "Sharjah",
+    "Ajman",
+    "Fujairah",
+    "Ras Al Khaimah",
+    "Umm Al Quwain"
+  ];
+  const productNames = [
+    "Blackout Curtain",
+    "Sheer Curtain",
+    "Motorized Curtain",
+    "Roller Blind",
+    "Zebra Blind",
+    "Romani Blind"
+  ];
+  const categories = ["Curtains", "Blinds", "Consultation"];
+
   return (
     <section className="relative bg-black text-white overflow-hidden">
       {/* Background image overlay */}
@@ -69,9 +88,14 @@ const ContactForm = () => {
             <div>
               <label className="text-sm">City</label>
               <select className="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none">
-                <option className="bg-black">Select City</option>
-                <option className="bg-black">Dubai</option>
-                <option className="bg-black">Abu Dhabi</option>
+                <option className="bg-black" disabled selected>
+                  Select City
+                </option>
+                {cities.map((city, index) => (
+                  <option key={index} className="bg-black">
+                    {city}
+                  </option>
+                ))}
               </select>
             </div>
             <div>
@@ -85,9 +109,14 @@ const ContactForm = () => {
             <div>
               <label className="text-sm">Interested in</label>
               <select className="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none">
-                <option className="bg-black">Curtains</option>
-                <option className="bg-black">Blinds</option>
-                <option className="bg-black">Consultation</option>
+                <option className="bg-black" disabled selected>
+                  Select Category
+                </option>
+                {productNames.map((productName, index) => (
+                  <option key={index} className="bg-black">
+                    {productName}
+                  </option>
+                ))}
               </select>
             </div>
           </div>
