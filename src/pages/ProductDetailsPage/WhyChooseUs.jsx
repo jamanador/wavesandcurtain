@@ -28,12 +28,12 @@ const WhyChooseUs = () => {
           <div
             key={index}
             className={`relative px-4 py-3 text-center flex items-center gap-2 ${index === 0
-              ? 'bg-gray-800 text-white'
+              ? 'bg-blue-500 text-white'
               : 'hover:bg-black transition duration-300'
               }`}
           >
             {index === 0 && (
-              <div className="hidden md:block w-0 h-0 border-t-[30px] border-t-transparent border-b-[30px] border-b-transparent border-r-[20px] border-r-blue-700 absolute -left-5"></div>
+              <div className="hidden md:block w-0 h-0 border-t-[30px] border-t-transparent border-b-[30px] border-b-transparent border-r-[20px] border-r-blue-500 absolute -left-5"></div>
             )}
             <span className="text-xl font-bold">{`0${index + 1}.`}</span>
             <div className="text-sm leading-4 font-semibold">{step.title}</div>
@@ -55,13 +55,18 @@ const WhyChooseUs = () => {
         {/* Text */}
         <div className="md:w-2/3 flex items-center">
           <div>
-            <h3 className="text-black font-bold text-lg mb-2">
-              {product.benefits[0].title}
-            </h3>
-            <p className="text-sm text-black mb-4">
-              {product.benefits[0].description}
-            </p>
-            <button className="bg-blue-400 text-white px-4 py-2 rounded-full font-medium hover:bg-blue-600 transition">
+            <ul className="space-y-4">
+              {product.benefits.map((benefit, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <span className="text-green-600 text-xl">✔️</span>
+                  <div>
+                    <h3 className="text-black font-bold text-lg">{benefit.title}</h3>
+                    <p className="text-sm text-black">{benefit.description}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <button className="bg-blue-400 text-white px-4 py-2 mt-8 rounded-full font-medium hover:bg-blue-600 transition lg:ml-8">
               Get More Information
             </button>
           </div>

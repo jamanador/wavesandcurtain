@@ -1,9 +1,9 @@
-import blackoutcurtain from '../assets/blackoutcurtain.png'; // Ensure this path is correct
-import motorizedcurtain from '../assets/motorizedcurtain.png'; // Ensure this path is correct
-import rollerblind from '../assets/rollerblind.png'; // Ensure this path is correct
-import romaniblind from '../assets/romaniblind.png'; // Ensure this path is correct
-import sheercurtain from '../assets/sheercurtain.png'; // Ensure this path is correct
-import zebrablind from '../assets/zebrablind.png'; // Ensure this path is correct
+import blackoutcurtain from '../assets/blackoutcurtain.png';
+import motorizedcurtain from '../assets/motorizedcurtain.png';
+import rollerblind from '../assets/rollerblind.png';
+import romaniblind from '../assets/romaniblind.png';
+import sheercurtain from '../assets/sheercurtain.png';
+import zebrablind from '../assets/zebrablind.png';
 
 export const products = [
   {
@@ -17,6 +17,16 @@ export const products = [
       { title: "Thermal Insulation", description: "Helps regulate room temperature and save on AC bills." },
       { title: "Noise Reduction", description: "Blocks outside noise for peaceful living." },
       { title: "Modern Finish", description: "Elegant designs that elevate any room aesthetic." },
+    ],
+    images: [
+      "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg",
+      "https://images.pexels.com/photos/6585761/pexels-photo-6585761.jpeg",
+      "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg",
+      "https://images.pexels.com/photos/1457848/pexels-photo-1457848.jpeg",
+      "https://images.pexels.com/photos/271673/pexels-photo-271673.jpeg",
+      "https://images.pexels.com/photos/271662/pexels-photo-271662.jpeg",
+      "https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg",
+      "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg"
     ]
   },
   {
@@ -30,6 +40,16 @@ export const products = [
       { title: "Airy Look", description: "Perfect for bright, breathable interiors." },
       { title: "Layer Friendly", description: "Pairs well with blackout or roman blinds." },
       { title: "Affordable Luxury", description: "Elegant styling at an affordable price." },
+    ],
+    images: [
+      "https://images.pexels.com/photos/6585762/pexels-photo-6585762.jpeg",
+      "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg",
+      "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg",
+      "https://images.pexels.com/photos/1457848/pexels-photo-1457848.jpeg",
+      "https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg",
+      "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg",
+      "https://images.pexels.com/photos/271662/pexels-photo-271662.jpeg"
     ]
   },
   {
@@ -43,6 +63,16 @@ export const products = [
       { title: "Smooth Glide System", description: "Quiet and seamless operation with motor tech." },
       { title: "Elegant Design", description: "Adds a luxurious, hotel-style touch to interiors." },
       { title: "Energy Efficient", description: "Automated scheduling helps control indoor climate." },
+    ],
+    images: [
+      "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg",
+      "https://images.pexels.com/photos/6585762/pexels-photo-6585762.jpeg",
+      "https://images.pexels.com/photos/1457848/pexels-photo-1457848.jpeg",
+      "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg",
+      "https://images.pexels.com/photos/6585761/pexels-photo-6585761.jpeg",
+      "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg",
+      "https://images.pexels.com/photos/271662/pexels-photo-271662.jpeg",
+      "https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg"
     ]
   },
   {
@@ -56,6 +86,16 @@ export const products = [
       { title: "Space Saving", description: "Rolls up neatly without bulk." },
       { title: "Easy to Maintain", description: "Dust-resistant and easy to wipe clean." },
       { title: "UV Protection", description: "Blocks harmful rays without blocking light fully." },
+    ],
+    images: [
+      "https://images.pexels.com/photos/1457848/pexels-photo-1457848.jpeg",
+      "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg",
+      "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg",
+      "https://images.pexels.com/photos/6585762/pexels-photo-6585762.jpeg",
+      "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg",
+      "https://images.pexels.com/photos/271662/pexels-photo-271662.jpeg",
+      "https://images.pexels.com/photos/271673/pexels-photo-271673.jpeg"
     ]
   },
   {
@@ -69,6 +109,16 @@ export const products = [
       { title: "Stylish Patterns", description: "Modern stripe designs for contemporary homes." },
       { title: "Privacy & Light Combo", description: "Get both visibility and privacy on demand." },
       { title: "Smooth Roller", description: "Easy chain or motor-driven motion." },
+    ],
+    images: [
+      "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg",
+      "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg",
+      "https://images.pexels.com/photos/6585761/pexels-photo-6585761.jpeg",
+      "https://images.pexels.com/photos/1457848/pexels-photo-1457848.jpeg",
+      "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg",
+      "https://images.pexels.com/photos/6585762/pexels-photo-6585762.jpeg",
+      "https://images.pexels.com/photos/271662/pexels-photo-271662.jpeg",
+      "https://images.pexels.com/photos/271673/pexels-photo-271673.jpeg"
     ]
   },
   {
@@ -82,8 +132,18 @@ export const products = [
       { title: "Custom Fabric Choices", description: "Match your decor with wide fabric options." },
       { title: "Soft Room Ambiance", description: "Adds texture and warmth to interiors." },
       { title: "Easy Operation", description: "Smooth pull system or motorized options." },
+    ],
+    images: [
+      "https://images.pexels.com/photos/6585761/pexels-photo-6585761.jpeg",
+      "https://images.pexels.com/photos/6585762/pexels-photo-6585762.jpeg",
+      "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg",
+      "https://images.pexels.com/photos/1457848/pexels-photo-1457848.jpeg",
+      "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg",
+      "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg",
+      "https://images.pexels.com/photos/271662/pexels-photo-271662.jpeg",
+      "https://images.pexels.com/photos/271673/pexels-photo-271673.jpeg"
     ]
-  },
+  }
 ];
 
 export const filterOptions = [

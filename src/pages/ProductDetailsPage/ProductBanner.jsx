@@ -1,6 +1,18 @@
 import { motion } from 'framer-motion';
+import { useParams } from 'react-router-dom';
+import { products } from '../../constants/products';
+useParams
+const ProductBanner = () => {
+  const { id } = useParams();
+  const product = products.find((p) => p.id === parseInt(id));
 
-const ProductBanner = ({ product }) => {
+  if (!product) {
+    return (
+      <div className="text-center py-10 text-xl font-semibold text-red-500">
+        Product not found
+      </div>
+    );
+  }
   return (
     <div
       className="relative w-full h-[60vh] md:h-[75vh] bg-cover bg-center"

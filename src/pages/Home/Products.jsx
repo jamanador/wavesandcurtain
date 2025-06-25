@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { products } from '../../constants/products';
 import ProductCard from './ProductCard';
 const Products = () => {
@@ -40,9 +41,9 @@ const Products = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <button className="mt-5 md:mt-7 border border-gray-300 text-gray-700 md:px-12 px-8 py-3 rounded-full hover:bg-gray-700 hover:text-white transition-colors duration-200 font-medium">
+          <Link to='/products' className="mt-5 md:mt-7 border border-gray-300 text-gray-700 md:px-12 px-8 py-3 rounded-full hover:bg-gray-700 hover:text-white transition-colors duration-200 font-medium">
             View All Our Products →
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>
