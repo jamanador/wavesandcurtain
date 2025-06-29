@@ -15,8 +15,7 @@ const ProductBanner = () => {
   }
   return (
     <div
-      className="relative w-full h-[60vh] md:h-[75vh] bg-cover bg-center"
-      style={{ backgroundImage: `url(${product.image})` }}
+      className="relative w-full h-[60vh] md:h-[75vh] bg-cover bg-center" style={{ backgroundImage: `url(${product.image})` }}
     >
       <div className="absolute inset-0 bg-black/40 backdrop-brightness-75"></div>
 

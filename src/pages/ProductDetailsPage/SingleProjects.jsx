@@ -46,7 +46,7 @@ const SingleProjects = () => {
                   src={image}
                   alt={`Project image ${index + 1}`}
                   loading="lazy"
-                  className="w-full h-full object-cover"
+                  className="w-full h-48 object-cover"
                 />
               </motion.div>
             ))
