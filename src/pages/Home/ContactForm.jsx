@@ -87,12 +87,12 @@ const ContactForm = () => {
             </div>
             <div>
               <label className="text-sm">City</label>
-              <select className="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none">
-                <option className="bg-black" disabled selected>
+              <select className="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none" defaultValue="" aria-label='Select City'>
+                <option className="bg-black" disabled value="">
                   Select City
                 </option>
                 {cities.map((city, index) => (
-                  <option key={index} className="bg-black">
+                  <option key={index} value={city} className="bg-black">
                     {city}
                   </option>
                 ))}
@@ -108,12 +108,12 @@ const ContactForm = () => {
             </div>
             <div>
               <label className="text-sm">Interested in</label>
-              <select className="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none">
-                <option className="bg-black" disabled selected>
+              <select className="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none" defaultValue="" aria-label='Select Category'>
+                <option className="bg-black" disabled value="">
                   Select Category
                 </option>
                 {productNames.map((productName, index) => (
-                  <option key={index} className="bg-black">
+                  <option key={index} value={productName} className="bg-black">
                     {productName}
                   </option>
                 ))}

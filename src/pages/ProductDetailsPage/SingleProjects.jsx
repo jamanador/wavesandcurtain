@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import { products } from '../../constants/products';
 
 const SingleProjects = () => {
-  const { id } = useParams();
-  const product = products.find((p) => p.id === parseInt(id));
+  const { name } = useParams();
+  const product = products.find((p) => p.name === name);
   console.log(product);
 
   if (!product) {

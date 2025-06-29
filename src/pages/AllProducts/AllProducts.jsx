@@ -41,7 +41,7 @@ function AllProducts() {
               key={product.id}
               product={product}
               index={filteredProducts.indexOf(product)}
-              onClick={() => navigate(`/product/${product.id}`)}
+              onClick={() => navigate(`/product/${product.name}`)}
             />
           ))
         ) : (

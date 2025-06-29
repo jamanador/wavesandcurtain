@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
 import { useParams } from 'react-router-dom';
 import { products } from '../../constants/products';
-useParams
 const ProductBanner = () => {
-  const { id } = useParams();
-  const product = products.find((p) => p.id === parseInt(id));
+  const { name } = useParams();
+  const product = products.find((p) => p.name === name);
 
   if (!product) {
     return (

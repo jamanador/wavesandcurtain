@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { createBrowserRouter as createBrowserRouter9, RouterProvider } from "react-router-dom";
 import Loader from "../components/Loader";
 import DefaultLayout from "../layout/DafaultLayout";
-import AboutUsPage from "../pages/AboutUs.jsx";
+import AboutUsPage from "../pages/About/AboutUs.jsx";
 import AllProducts from "../pages/AllProducts/AllProducts.jsx";
 import NotFound from "../pages/ErrorPage/NotFound";
 import LazyHome from "../pages/Home/LazyHome.jsx";
@@ -26,7 +26,7 @@ export const Routes = () => {
           element: <AllProducts />
         },
         {
-          path: "/product/:id",
+          path: "/product/:name".toLowerCase(),
           element: <ProductDetailsPage />
         },
         {

@@ -1,7 +1,9 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { DraftingCompass, Gem, Headset, X } from 'lucide-react';
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
+import discover from '../../assets/discover.png';
+import motorizedcurtain from '../../assets/motorizedcurtain.png';
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
@@ -43,10 +45,6 @@ const InputField = ({ type = 'text', placeholder }) => (
 const AboutUsPage = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const handleScroll = (id) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
 
   return (
     <>
@@ -54,7 +52,7 @@ const AboutUsPage = () => {
         <div className="max-w-7xl mx-auto px-6">
 
           {/* Hero Section */}
-          <section className="min-h-screen flex items-center py-12 lg:py-0 bg-white">
+          <section className="min-h-screen flex items-center py-8 lg:py-0 bg-white">
             <div className="grid lg:grid-cols-2 items-center gap-12">
               <div className="order-2 lg:order-1">
                 <p className="text-blue-500 font-semibold mb-3 tracking-wider">ABOUT US</p>
@@ -64,20 +62,32 @@ const AboutUsPage = () => {
                 <p className="text-base text-gray-600 max-w-lg mb-8 leading-relaxed">
                   Founded on a passion for design and a commitment to quality, we transform living spaces with bespoke curtains and blinds.
                 </p>
-                <button
-                  onClick={() => handleScroll('our-story')}
-                  className="bg-blue-500 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-600 transition-all duration-300"
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6, duration: 0.8 }}
+                  className="flex flex-wrap gap-4"
                 >
-                  Explore Our Story
-                </button>
+                  <Link to='/products' className="text-black px-5 md:px-8 py-3 border rounded-full hover:bg-blue-400 hover:text-white transition-colors duration-200 font-medium">
+                    Our Products →
+                  </Link>
+                  <button className="border border-gray-300 text-gray-700 px-5 md:px-8 py-3 rounded-full hover:bg-gray-700 hover:text-white transition-colors duration-200 font-medium">
+                    View Our Recent Projects</button>
+                </motion.div>
               </div>
               <div className="order-1 lg:order-2">
-                <img
-                  src="https://images.pexels.com/photos/2765875/pexels-photo-2765875.jpeg"
-                  loading='eager'
-                  alt="Elegant Interior"
-                  className="w-full h-auto object-cover rounded-xl"
-                />
+                <motion.div
+                  // whileHover={{ scale: 1.05 }}
+                  // whileTap={{ scale: 1.95, duration: 0.95 }}
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
+                  className="lg:order-2"
+                >
+                  <img src={discover} alt="" className="w-full h-auto max-w-full" loading="lazy" /> {/* ✅ Added max-w-full */}
+                </motion.div>
+
               </div>
             </div>
           </section>
@@ -87,7 +97,7 @@ const AboutUsPage = () => {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="h-96 lg:h-[550px] relative">
                 <img
-                  src="https://images.pexels.com/photos/3935320/pexels-photo-3935320.jpeg"
+                  src={motorizedcurtain}
                   alt="Story"
                   className="w-full h-full object-cover rounded-xl shadow-xl"
                 />
@@ -107,7 +117,7 @@ const AboutUsPage = () => {
           </section>
 
           {/* Our Promise Section */}
-          <section className="py-20 md:py-28 bg-white">
+          <section className="py-20 md:py-40 bg-white">
             <motion.div
               className="text-center mb-16"
               initial="hidden"
@@ -150,7 +160,7 @@ const AboutUsPage = () => {
             </p>
             <button
               onClick={() => setShowModal(true)}
-              className="bg-white text-blue-500 font-bold py-4 px-12 rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-blue-500 font-bold py-4 px-6 text-sm md:text-lg md:px-12 rounded-lg shadow-md hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               Get a Free Consultation
             </button>
