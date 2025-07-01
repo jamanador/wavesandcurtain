@@ -8,6 +8,7 @@ import AllProjectsPage from "../pages/AllProjectsPage/AllProjectsPage.jsx";
 import ContactUsPage from "../pages/ContactUs/ContactUsPage.jsx";
 import NotFound from "../pages/ErrorPage/NotFound";
 import LazyHome from "../pages/Home/LazyHome.jsx";
+import PrivacyPolicyPage from "../pages/PrivacyPolicy/PrivacyPolicy.jsx";
 import ProductDetailsPage from "../pages/ProductDetailsPage/ProductDetailsPage.jsx";
 export const Routes = () => {
   const createRouter = createBrowserRouter9([
@@ -43,6 +44,11 @@ export const Routes = () => {
           path: "/projects",
           element: <AllProjectsPage />
         },
+        {
+          path: '/privacy',
+          element: <PrivacyPolicyPage />
+        }
+        ,
         { path: '*', element: < NotFound /> }
       ]
     }

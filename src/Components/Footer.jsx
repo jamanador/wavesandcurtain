@@ -80,7 +80,7 @@ const Footer = () => {
               <div>Certified Installer</div>
               <div>Dubai Municipality Approved</div> */}
               <div>Dubai Municipality Approved</div>
-              <div>Privacy Policy</div>
+              <div><Link className='hover:text-blue-400 hover:font-semibold' to="/privacy">Privacy Policy</Link></div>
             </div>
           </motion.div>
 
