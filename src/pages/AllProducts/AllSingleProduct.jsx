@@ -25,7 +25,7 @@ const AllSingleProduct = ({ product, index }) => {
           {/* Always-visible text */}
           <div className="absolute inset-0 flex items-center justify-center z-50">
             <Link to={`/product/${product.name}`} title='Click Here To View More Details' className="text-center text-white font-bold text-lg md:text-xl lg:text-2xl">
-              <h3 className="text-4xl font-extrabold text-white group-hover:text-white transition-colors duration-300 text-center px-4 leading-tight">
+              <h3 className="text-4xl font-extrabold text-white hover:text-[#f8d93f] hover:font-extrabold  transition-colors duration-300 text-center px-4 leading-tight">
                 {firstLine}<br />{secondLine}
               </h3>
             </Link>

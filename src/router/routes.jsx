@@ -4,6 +4,8 @@ import Loader from "../components/Loader";
 import DefaultLayout from "../layout/DafaultLayout";
 import AboutUsPage from "../pages/About/AboutUs.jsx";
 import AllProducts from "../pages/AllProducts/AllProducts.jsx";
+import AllProjectsPage from "../pages/AllProjectsPage/AllProjectsPage.jsx";
+import ContactUsPage from "../pages/ContactUs/ContactUsPage.jsx";
 import NotFound from "../pages/ErrorPage/NotFound";
 import LazyHome from "../pages/Home/LazyHome.jsx";
 import ProductDetailsPage from "../pages/ProductDetailsPage/ProductDetailsPage.jsx";
@@ -32,6 +34,14 @@ export const Routes = () => {
         {
           path: "/about",
           element: <AboutUsPage />
+        },
+        {
+          path: "/contact",
+          element: <ContactUsPage />
+        },
+        {
+          path: "/projects",
+          element: <AllProjectsPage />
         },
         { path: '*', element: < NotFound /> }
       ]

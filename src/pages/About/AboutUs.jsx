@@ -153,7 +153,7 @@ const AboutUsPage = () => {
           </section>
 
           {/* CTA Section */}
-          <section className="bg-blue-500 py-20 md:py-24 text-center rounded-3xl mb-32">
+          <section className="bg-blue-500 py-20 md:py-24 text-center rounded-3xl mb-20 md:mb-32 px-6 md:px-0">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Begin Your Design Journey</h2>
             <p className="text-lg text-blue-100 md:text-xl max-w-3xl mx-auto mb-8">
               Let’s create something extraordinary together.
