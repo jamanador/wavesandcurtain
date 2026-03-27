@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'; // Assume you have more projects data
+import ConsultationButton from '../../Components/ConsultationButton';
 import { projects } from '../../constants/projects';
 import DiscoverUs from '../Home/DiscoverUs';
-
 const AllProjectsPage = () => {
   return (
     <section id="more-projects" className="py-20 mt-20 max-w-6xl mx-auto">
@@ -45,11 +45,7 @@ const AllProjectsPage = () => {
         <p className="text-lg text-blue-100 md:text-xl max-w-3xl mx-auto mb-8">
           Let’s create something extraordinary together.
         </p>
-        <button
-          className="bg-white text-blue-500 font-bold py-4 px-6 text-sm md:text-lg md:px-12 rounded-lg shadow-md hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
-        >
-          Get a Free Consultation
-        </button>
+        <ConsultationButton />
       </section>
       <DiscoverUs />
     </section>

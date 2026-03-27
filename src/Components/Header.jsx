@@ -57,14 +57,27 @@ const Header = () => {
           </nav>
 
           {/* Quote Button */}
-          <motion.button
+          {/* <motion.button
             whilehover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="hidden lg:flex items-center space-x-2 bg-blue-400 text-white px-6 py-2 rounded-lg hover:bg-blue-500 transition-colors duration-200"
           >
             <Phone className="w-4 h-4" />
             <span>Get Quote</span>
+          </motion.button> */}
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() =>
+            (window.location.href =
+              "https://wa.me/971553371902?text=Hi!%20I’m%20looking%20for%20a%20free%20consultation.%20Can%20you%20please%20assist%20me%3F%0AI'm%20interested%20in%20knowing%20the%20best%20options%20for%20my%20home.")
+            }
+            className="hidden lg:flex items-center space-x-2 bg-blue-400 text-white px-6 py-2 rounded-lg hover:bg-blue-500 transition-colors duration-200"
+          >
+            <Phone className="w-4 h-4" />
+            <span>Get Quote</span>
           </motion.button>
+
 
           {/* Mobile Menu Button */}
           <button
@@ -92,10 +105,22 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <button className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-2 rounded-lg w-full justify-center">
+            {/* <button className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-2 rounded-lg w-full justify-center">
               <Phone className="w-4 h-4" />
               <span>Quote</span>
-            </button>
+            </button> */}
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() =>
+              (window.location.href =
+                "https://wa.me/971553371902?text=Hi!%20I’m%20looking%20for%20a%20free%20consultation.%20Can%20you%20please%20assist%20me%3F%0AI'm%20interested%20in%20knowing%20the%20best%20options%20for%20my%20home.")
+              }
+              className="flex items-center space-x-2 w-full justify-center bg-blue-400 text-white px-6 py-2 rounded-lg hover:bg-blue-500 transition-colors duration-200"
+            >
+              <Phone className="w-4 h-4" />
+              <span>Get Quote</span>
+            </motion.button>
           </div>
         </motion.div>
       </div>

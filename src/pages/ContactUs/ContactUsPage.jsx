@@ -2,14 +2,15 @@ import { ChevronDown, Mail, MapPin, Phone, Send } from 'lucide-react';
 import { useState } from 'react';
 
 
-// Contact Page Component
 const ContactUsPage = () => {
   const [formState, setFormState] = useState({
     name: '',
     email: '',
     subject: '',
     message: '',
+    whatsappNumber: '',   // <-- added
   });
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
 
@@ -17,22 +18,33 @@ const ContactUsPage = () => {
     const { name, value } = e.target;
     setFormState(prevState => ({ ...prevState, [name]: value }));
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitMessage('');
 
-    // --- MOCK API CALL ---
-    console.log("Form Data Submitted:", formState);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitMessage('Thank you! Your message has been sent.');
-      setFormState({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setSubmitMessage(''), 5000);
-    }, 2000);
-    // --- END MOCK API CALL ---
+    const { name, email, subject, message, whatsappNumber } = formState;
+    const text = `
+    New Client Inquiry:
+    Name: ${name}
+    Email: ${email}
+    Subject: ${subject}
+    Message: ${message}
+    User's WhatsApp Number: ${whatsappNumber}
+  `;
+
+    // Hardcoded recipient number
+    const recipientNumber = "971553371902";
+    const url = `https://wa.me/${recipientNumber}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+
+    setIsSubmitting(false);
+    setSubmitMessage('Opening WhatsApp...');
+    setFormState({ name: "", email: "", subject: "", message: "", whatsappNumber: "" });
+    setTimeout(() => setSubmitMessage(''), 3000);
   };
+
+
 
   const faqData = [
     {
@@ -75,9 +87,9 @@ const ContactUsPage = () => {
               Fill out the form and our team will get back to you within 24 hours.
             </p>
             <div className="mt-10 space-y-8">
-              <InfoItem icon={<Phone className="text-blue-500" />} title="Call us" content="+971 55 337 1902" />
-              <InfoItem icon={<Mail className="text-blue-500" />} title="Email us" content="badirafique@gmail.com" />
-              <InfoItem icon={<MapPin className="text-blue-500" />} title="Our office" content="Dubai, United Arab Emirates" />
+              <InfoItem icon={<Phone className="text-[#00B2AD]" />} title="Call us" content="+971553371902" />
+              <InfoItem icon={<Mail className="text-[#00B2AD]" />} title="Email us" content="badirafique@gmail.com" />
+              <InfoItem icon={<MapPin className="text-[#00B2AD]" />} title="Our office" content="Dubai, United Arab Emirates" />
             </div>
           </div>
 
@@ -90,6 +102,16 @@ const ContactUsPage = () => {
                   <FormInput label="Email" type="email" name="email" placeholder="Your Email" value={formState.email} onChange={handleInputChange} required />
                   <div className="sm:col-span-2">
                     <FormInput label="Subject" type="text" name="subject" placeholder="Assistance with an order" value={formState.subject} onChange={handleInputChange} required />
+                  </div>
+                  <div className="sm:col-span-2">
+                    <FormInput
+                      label="Phone Number"
+                      type="tel"
+                      name="whatsappNumber"
+                      placeholder="Enter your Phone number"
+                      value={formState.whatsappNumber}
+                      onChange={handleInputChange}
+                      required />
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">Message</label>

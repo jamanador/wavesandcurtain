@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
       </div>
     );
   }
-
+  console.log(product)
   return (
     <section className=" text-black my-20">
       {/* Heading */}
@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
         {/* Image */}
         <div className="w-full md:w-2/3 h-auto overflow-hidden rounded-xl shadow-md">
           <img
-            src={product.image}
+            src={product.images[3]}
             alt={product.name}
             className="w-full h-full object-cover"
           />
